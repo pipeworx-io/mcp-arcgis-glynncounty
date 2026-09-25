@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-arcgis-glynncounty",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Glynn County GIS — Glynn County, Georgia open geospatial data (ArcGIS).",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-efee429d1e5eb225751142e86984da9af641adc0e6140465b4ed35ebe7ff1550",
-    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
+    "sourceHash": "v1-d35b5015569f42e9a2acebefa29a82e0f13245d1a733bec14dd39224d9cdc2c7",
+    "sourceCommit": "dca20ba6e13a9aa1c9f2918fc2ddaffe4cc30e5c"
   }
 }
