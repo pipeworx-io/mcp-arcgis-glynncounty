@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-arcgis-glynncounty",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Glynn County GIS — Glynn County, Georgia open geospatial data (ArcGIS).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-arcgis-glynncounty": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "arcgis-glynncounty"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-arcgis-glynncounty.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/arcgis-glynncounty",
   "pipeworx": {
-    "sourceHash": "v1-7700867b68d3f14d47c321cea736f516b22aaddad50724359b9cf0887bfc200a",
-    "sourceCommit": "71f5325b13bb0ea0de2f0f7207885962ec91a484"
+    "mode": "gateway",
+    "slug": "arcgis-glynncounty",
+    "gatewaySlug": "arcgis-glynncounty",
+    "sourceHash": "v1-5a42c85157429cc5def0ac9061a936687931fd6cc26a462dd311865f2f1d78b2",
+    "sourceCommit": "c6136b81713e72ccb22977ca0c0cd981f8c3f081"
   }
 }
